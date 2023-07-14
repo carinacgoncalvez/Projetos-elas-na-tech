@@ -5,38 +5,69 @@
     <meta charset="UTF-8">
     <style>
         body{
-            margin-top: auto;
-            width: 700px;
+            margin-top: auto;  }              
+        
+        main {
+        width:70%;
+        margin:auto;}
+
+        .config{
+            width: 250px; height: 250px; 
         }
-        p{
-            line-height: 1.5;
-            text-align: justify;
-        }
+        
         .descricao{
             font-style: oblique;font-size:small;font-weight: lighter;color:#d12078;
         }
-        .item{ font-weight: bold;font-size: medium;color: deeppink;
-        }
-        .config{
-            width: 200px;
-            
-        }
+        
     
-        
+            .menu{
+                background-image:url(cake.jpg);
+                height: 600px;
+                background-size: cover;
+                background-position: center ;
+                padding-top: 1px;   
+            }
+            .slogan{
+                color:rgb(38, 2, 59);
+                text-align: center;
+                line-height: 1.5}
 
-        
-    </style>
-
-
-
-
+             .slogan p{
+                font-style: italic;
+                font-size: 40px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+             }          
+        </style>
 </head>
+
 <body>
-    <link href="cardápio.css" rel="stylesheet">
+    <header class="menu">
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Cardápio</a></li>
+        </ul>
+    </nav>
+    <div class="slogan">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 <h1>Cardápio La Doceria</h1>
-<h2>A vida é sempre doce com La Doceria</h2>
 <br>
-<h3> Salgados</h3>
+        <br>
+<p>A vida é sempre doce com La Doceria</p>
+    </div>
+    </header>
+
+    <link href="cardápio.css" rel="stylesheet">
+    <main>
+<section>
+    <article>
+    <header>
+<h2> Salgados</h2>
+</header>
 <ul> 
 <li class="item"> Pão de queijo </li>
 <img src="paodequeijo.jpg" class="config">
@@ -49,7 +80,11 @@
 R$5,00</p>
 <br>
 </ul>
-<h3>Tortas</h3>
+</article>
+<article>
+    <header>
+<h2>Tortas</h2>
+</header>
 <ul>
     <li class="item">Brigadeiro</li>
     <img src="bolo de chocolate.jpg" class="config" alt="foto de brigadeiro">
@@ -61,7 +96,11 @@ R$5,00</p>
     <p class="descricao"> bolo de chocolate vermelho com recheio de creme de limão<br>
     R$16,00</p>
 </ul>
-<h3>Doces</h3>
+</article>
+<article>
+    <header>
+<h2>Doces</h2>
+</header>
 <ul>
     <li class="item"> Brigadeiro</li>
     <img src="brigadeiro.jpg" class="config" alt="foto de brigadeiro">
@@ -78,8 +117,9 @@ R$5,00</p>
     <p class="descricao"> doce de leite condensado com recheio de morango coberto com chocolate<br>
     R$3,00</p>
 </ul>
-
-
+</article>
+</section>
+</main>
 </body>
 
 
